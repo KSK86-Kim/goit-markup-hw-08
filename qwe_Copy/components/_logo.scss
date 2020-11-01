@@ -1,0 +1,18 @@
+.logo {
+  display: block;
+
+  font-family: $logo-font;
+  color: $primary-title-color;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  animation-duration: 800ms;
+
+  &__span {
+    color: $accent-color;
+  }
+  &--white {
+    color: #ffffff;
+  }
+}
