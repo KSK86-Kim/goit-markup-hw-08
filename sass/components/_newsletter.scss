@@ -1,0 +1,82 @@
+.newsletter {
+  margin-left: auto;
+
+  &__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 187% */
+    letter-spacing: 0.06em;
+  }
+
+  &__wrapper {
+    display: flex;
+    position: relative;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__svg {
+    position: absolute;
+    bottom: 50%;
+    right: 28px;
+    transform: translateY(50%);
+  }
+
+  &__btn {
+    display: flex;
+    // width: 200px;
+  }
+  &__label {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+  &__input {
+    background-color: transparent;
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+    color: $primary-white-color;
+
+    &:focus {
+      border: 1px solid $accent-form-color;
+    }
+  }
+
+  .newsletter__btn {
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    margin-left: 12px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    padding: 10px 28px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $primary-white-color;
+    background: $accent-form-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    border: 0;
+  }
+}
