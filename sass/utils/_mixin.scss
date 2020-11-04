@@ -1,3 +1,8 @@
+@mixin push-auto {
+   margin-left: auto;
+   margin-right: auto;
+}
+
 @mixin box(
    $width, 
    $height: $width
@@ -6,22 +11,36 @@
    height: $height;
  }
 
+ @mixin padding (
+    $top: 16px, 
+    $bot: 16px, 
+    $right: 15px, 
+    $left: 15px
+    ) {
+   padding-top: $top;
+   padding-bottom: $bot;
+   padding-right: $right;
+   padding-left: $left;
+ }
+
 @mixin flex-center(
    $type: flex, 
    ) {
    display: $type;
    align-items: center;
-   justify-content: center;
  }
 
-@mixin transition(
-   $element: color,
-   $time: 250ms, 
-   $cubic:cubic-bezier(0.4, 0, 0.2, 1), 
-   $delay: 0ms
+ @mixin transition(
+   $tp: all, 
+   $td: 250ms,
+   $ttf: cubic-bezier(0.4, 0, 0.2, 1), 
+   $tdel: 0ms
    ) {
-   transition: $element $time $cubic $delay;
-}
+   transition-property: $tp;
+   transition-duration: $td;
+   transition-timing-function: $ttf;
+   transition-delay: $tdel;
+ }
 
 @mixin bkg-img(
    $repeat: no-repeat,

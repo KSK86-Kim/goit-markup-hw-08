@@ -1,0 +1,95 @@
+.basis {
+  &__section {
+    @media screen and (max-width: 1199px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 94px;
+      padding-bottom: 47px;
+    }
+  }
+  &__list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    @media screen and (max-width: 767px) {
+      max-width: 450px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      max-width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
+    }
+  }
+  &__subject {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+  }
+
+  @media screen and (max-width: 767px) {
+    &__item:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+  &__subject::before {
+    display: block;
+    content: "";
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: #f5f4fa;
+
+    @media screen and (max-width: 767px) {
+      max-width: 450px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      max-width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 270px;
+    }
+  }
+  &__item:nth-child(1) &__subject::before {
+    background-image: url(../images/svg/Group.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__item:nth-child(2) &__subject::before {
+    background-image: url(../images/svg/clock.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__item:nth-child(3) &__subject::before {
+    background-image: url(../images/svg/diagram.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__item:nth-child(4) &__subject::before {
+    background-image: url(../images/svg/astronaut.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,25 @@
+.con {
+   margin: 0 auto;
+   max-width: 480px;
+   background-color: rgb(198, 201, 49);
+   padding: 20px;
+
+}
+
+.nav {
+   position: relative;
+   padding: 20px;
+   display: flex;
+   background-color: rgb(79, 80, 24);
+   align-items: center;
+   justify-content: space-between;
+}
+
+.wrap {
+   position: absolute;
+   width: 100%;
+   left: 0;
+   top: 100%;
+   background-color: rgb(155, 78, 7);
+   text-align: center;
+}
