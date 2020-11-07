@@ -22,19 +22,23 @@ img {
   text-decoration: none;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .title {
   margin-top: 0;
-  margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
   letter-spacing: 0.03em;
+
+  @media screen and(max-width: 1199px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.178;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.178;
+  }
 }
 
 .bro {
@@ -48,7 +52,6 @@ img {
 .active {
   color: $accent-color;
 }
-
 
 .wrapper {
   display: flex;

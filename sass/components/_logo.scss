@@ -1,18 +1,17 @@
 .logo {
   text-align: center;
 
-  display: block;
-  min-width: 100px;
+  display: inline-block;
   font-family: $logo-font;
   color: $primary-title-color;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 0.03em;
 
   &__span {
     color: $accent-color;
   }
   &--white {
-    color: #ffffff;
+    color: $primary-white-color;
   }
 
   @media screen and (max-width: 1199px) {
